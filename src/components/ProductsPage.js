@@ -9,10 +9,11 @@ import { ProductTable, SearchBar } from "./index"
   return (
     <div>
       <h1>IronStore</h1>
+      <SearchBar products={products}/>
         {products.map((product) => (
             
-      <ProductTable key={product.id} product={product}  />
-        ))}
+            <ProductTable key={product.id} product={product}  />
+            ))}
     </div>
   )
 }
